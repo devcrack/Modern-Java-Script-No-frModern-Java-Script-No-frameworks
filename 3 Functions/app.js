@@ -29,3 +29,27 @@ console.log(suma(10, 23 ));
 (function (tecnologia) {
     console.log(`Aprendiendo ${tecnologia}`);
 })('Javascript');
+
+// Property Methods
+// This methods are put inside of a javaScript Object
+const musica = {
+    reproducir: function(){
+        console.log('Reproduciendo Musica')
+    },
+    pausa: function(){
+        console.log('Pausando Musica')
+    }
+};
+
+
+musica.reproducir();
+musica.pausa();
+
+// You can add and create outside of object definition 
+
+musica.borrar = function(id){
+    console.log(`Borrando la cancion con el id ${id}`);
+};
+
+musica.borrar(2)
+
